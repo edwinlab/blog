@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Simple validator ruby"
+description: "Simple dry validator in ruby."
+tags: [ruby, validation]
+---
 # Simple validator ruby
 Dry validator in ruby to validate parameter.
 
