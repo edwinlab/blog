@@ -1,20 +1,50 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Edwin Andrianto</title>
+    <description></description>
+    <link>https://edwinlab.github.io/blog</link>
+    <atom:link href="https://edwinlab.github.io/blog/blog/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>2018 perlu ganti hape lagi?</title>
+        <description>Perkembangan smartphone yang menggila apakah kita juga (ikutan) menggila?</description>
+        <pubDate>Fri, 28 Sep 2018 00:00:00 +0700</pubDate>
+        <link>https://edwinlab.github.io/blog/blog/posts/2018-ganti-hape-lagi</link>
+        <guid isPermaLink="true">https://edwinlab.github.io/blog/blog/posts/2018-ganti-hape-lagi</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Partitioning in PostgreSQL</title>
+        <description>How to implement partitioning in postgresql to improve huge row of table.</description>
+        <pubDate>Mon, 21 Aug 2017 00:00:00 +0700</pubDate>
+        <link>https://edwinlab.github.io/blog/blog/posts/partitioning-in-postgresql</link>
+        <guid isPermaLink="true">https://edwinlab.github.io/blog/blog/posts/partitioning-in-postgresql</guid>
+      </item>
+    
+      <item>
+        <title>Laravel 5 Simple ACL manager</title>
+        <description>Simple ACL tutorial in Laravel 5 include model and controller.</description>
+        <pubDate>Mon, 08 May 2017 00:00:00 +0700</pubDate>
+        <link>https://edwinlab.github.io/blog/blog/posts/laravel-5-simple-acl-manager</link>
+        <guid isPermaLink="true">https://edwinlab.github.io/blog/blog/posts/laravel-5-simple-acl-manager</guid>
+      </item>
+    
+      <item>
+        <title>Simple validator ruby</title>
+        <description>Simple dry validator in ruby.</description>
+        <pubDate>Tue, 02 May 2017 00:00:00 +0700</pubDate>
+        <link>https://edwinlab.github.io/blog/blog/posts/dry-validator-ruby</link>
+        <guid isPermaLink="true">https://edwinlab.github.io/blog/blog/posts/dry-validator-ruby</guid>
+      </item>
+    
+      <item>
+        <title>Technical Interview Cheatsheet</title>
+        <description>Quick guide and reference summary of that computer science course.</description>
+        <pubDate>Mon, 01 May 2017 00:00:00 +0700</pubDate>
+        <link>https://edwinlab.github.io/blog/blog/posts/technical-interview-cheatsheet</link>
+        <guid isPermaLink="true">https://edwinlab.github.io/blog/blog/posts/technical-interview-cheatsheet</guid>
+      </item>
+    
   </channel>
 </rss>

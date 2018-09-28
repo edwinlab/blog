@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126639765-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126639765-1');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Edwin Andrianto | Technical Interview Cheatsheet</title>
+  <meta name="description" content="Quick guide and reference summary of that computer science course.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Technical Interview Cheatsheet">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://edwinlab.github.io/blog/blog/posts/technical-interview-cheatsheet">
+  <meta property="og:description" content="Quick guide and reference summary of that computer science course.">
+  <meta property="og:site_name" content="Edwin Andrianto">
+  <meta property="og:image" content="https://edwinlab.github.io/blog/blog/assets/og-image.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://edwinlab.github.io/blog/blog/posts/technical-interview-cheatsheet">
+  <meta name="twitter:title" content="Technical Interview Cheatsheet">
+  <meta name="twitter:description" content="Quick guide and reference summary of that computer science course.">
+  <meta name="twitter:image" content="https://edwinlab.github.io/blog/blog/assets/og-image.jpg">
+
+  <link rel="apple-touch-icon" href="/blog/assets/apple-touch-icon.png">
+  <link href="https://edwinlab.github.io/blog/blog/feed.xml" type="application/rss+xml" rel="alternate" title="Edwin Andrianto Last 10 blog posts" />
+
+  
+
+  
+    <link type="text/css" rel="stylesheet" href="/blog/assets/light.css">
+  
+</head>
+
+<body>
+  <main role="main">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav reveal">
+  <a href="/blog/" class="header-logo" title="Edwin Andrianto">Edwin Andrianto</a>
+  <ul class="header-links">
+    
+    
+      <li>
+        <a href="https://twitter.com/edwinlab" target="_blank" title="Twitter">
+          <span class="icon icon-social-twitter"></span>
+        </a>
+      </li>
+    
+    
+    
+      <li>
+        <a href="https://github.com/edwinlab" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://www.linkedin.com/in/edwinandrianto" target="_blank" title="LinkedIn">
+          <span class="icon icon-social-linkedin"></span>
+        </a>
+      </li>
+    
+    
+    
+      <li>
+        <a href="mailto:edwinuad@gmail.com" title="Email">
+          <span class="icon icon-at"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/blog/feed.xml" target="_blank" title="RSS">
+          <span class="icon icon-social-rss"></span>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <article class="article reveal">
+          <header class="article-header">
+            <h1>Technical Interview Cheatsheet</h1>
+            <p>Quick guide and reference summary of that computer science course.</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                May 1, 2017
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  10 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/blog/tag/interview">interview</a>
+                
+                  <a href="/blog/tag/guide">guide</a>
+                
+                  <a href="/blog/tag/reference">reference</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <h2 id="studying-for-a-tech-interview-sucks-so-heres-a-cheat-sheet-to-help">Studying for a Tech Interview Sucks, so Here’s a Cheat Sheet to Help</h2>
+
+<p>This list is meant to be a both a quick guide and reference for further research into these topics.  It’s basically a summary of that comp sci course you never took or forgot about, so there’s no way it can cover everything in depth.  It also will be available as a <a href="https://gist.github.com/TSiege/cbb0507082bb18ff7e4b">gist</a> on Github for everyone to edit and add to.</p>
+
+<h2 id="data-structure-basics">Data Structure Basics</h2>
+
+<h3 id="array"><strong>Array</strong></h3>
+<h4 id="definition">Definition:</h4>
+<ul>
+  <li>Stores data elements based on an sequential, most commonly 0 based, index.</li>
+  <li>Based on <a href="http://en.wikipedia.org/wiki/Tuple">tuples</a> from set theory.</li>
+  <li>They are one of the oldest, most commonly used data structures.</li>
+</ul>
+
+<h4 id="what-you-need-to-know">What you need to know:</h4>
+<ul>
+  <li>Optimal for indexing; bad at searching, inserting, and deleting (except at the end).</li>
+  <li><strong>Linear arrays</strong>, or one dimensional arrays, are the most basic.
+    <ul>
+      <li>Are static in size, meaning that they are declared with a fixed size.</li>
+    </ul>
+  </li>
+  <li><strong>Dynamic arrays</strong> are like one dimensional arrays, but have reserved space for additional elements.
+    <ul>
+      <li>If a dynamic array is full, it copies it’s contents to a larger array.</li>
+    </ul>
+  </li>
+  <li><strong>Two dimensional arrays</strong> have x and y indices like a grid or nested arrays.</li>
+</ul>
+
+<h4 id="big-o-efficiency">Big O efficiency:</h4>
+<ul>
+  <li>Indexing:         Linear array: O(1),      Dynamic array: O(1)</li>
+  <li>Search:           Linear array: O(n),      Dynamic array: O(n)</li>
+  <li>Optimized Search: Linear array: O(log n), Dynamic array: O(log n)</li>
+  <li>Insertion:        Linear array: n/a        Dynamic array: O(n)</li>
+</ul>
+
+<h3 id="linked-list"><strong>Linked List</strong></h3>
+<h4 id="definition-1">Definition:</h4>
+<ul>
+  <li>Stores data with <strong>nodes</strong> that point to other nodes.
+    <ul>
+      <li>Nodes, at its most basic it has one datum and one reference (another node).</li>
+      <li>A linked list <em>chains</em> nodes together by pointing one node’s reference towards another node.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-1">What you need to know:</h4>
+<ul>
+  <li>Designed to optimize insertion and deletion, slow at indexing and searching.</li>
+  <li><strong>Doubly linked list</strong> has nodes that reference the previous node.</li>
+  <li><strong>Circularly linked list</strong> is simple linked list whose <strong>tail</strong>, the last node, references the <strong>head</strong>, the first node.</li>
+  <li><strong>Stack</strong>, commonly implemented with linked lists but can be made from arrays too.
+    <ul>
+      <li>Stacks are <strong>last in, first out</strong> (LIFO) data structures.</li>
+      <li>Made with a linked list by having the head be the only place for insertion and removal.</li>
+    </ul>
+  </li>
+  <li><strong>Queues</strong>, too can be implemented with a linked list or an array.
+    <ul>
+      <li>Queues are a <strong>first in, first out</strong> (FIFO) data structure.</li>
+      <li>Made with a doubly linked list that only removes from head and adds to tail.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="big-o-efficiency-1">Big O efficiency:</h4>
+<ul>
+  <li>Indexing:         Linked Lists: O(n)</li>
+  <li>Search:           Linked Lists: O(n)</li>
+  <li>Optimized Search: Linked Lists: O(n)</li>
+  <li>Insertion:        Linked Lists: O(1)</li>
+</ul>
+
+<h3 id="hash-table-or-hash-map"><strong>Hash Table or Hash Map</strong></h3>
+<h4 id="definition-2">Definition:</h4>
+<ul>
+  <li>Stores data with key value pairs.</li>
+  <li><strong>Hash functions</strong> accept a key and return an output unique only to that specific key.
+    <ul>
+      <li>This is known as <strong>hashing</strong>, which is the concept that an input and an output have a one-to-one correspondence to map information.</li>
+      <li>Hash functions return a unique address in memory for that data.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-2">What you need to know:</h4>
+<ul>
+  <li>Designed to optimize searching, insertion, and deletion.</li>
+  <li><strong>Hash collisions</strong> are when a hash function returns the same output for two distinct inputs.
+    <ul>
+      <li>All hash functions have this problem.</li>
+      <li>This is often accommodated for by having the hash tables be very large.</li>
+    </ul>
+  </li>
+  <li>Hashes are important for associative arrays and database indexing.</li>
+</ul>
+
+<h4 id="big-o-efficiency-2">Big O efficiency:</h4>
+<ul>
+  <li>Indexing:         Hash Tables: O(1)</li>
+  <li>Search:           Hash Tables: O(1)</li>
+  <li>Insertion:        Hash Tables: O(1)</li>
+</ul>
+
+<h3 id="binary-tree"><strong>Binary Tree</strong></h3>
+<h4 id="definition-3">Definition:</h4>
+<ul>
+  <li>Is a tree like data structure where every node has at most two children.
+    <ul>
+      <li>There is one left and right child node.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-3">What you need to know:</h4>
+<ul>
+  <li>Designed to optimize searching and sorting.</li>
+  <li>A <strong>degenerate tree</strong> is an unbalanced tree, which if entirely one-sided is a essentially a linked list.</li>
+  <li>They are comparably simple to implement than other data structures.</li>
+  <li>Used to make <strong>binary search trees</strong>.
+    <ul>
+      <li>A binary tree that uses comparable keys to assign which direction a child is.</li>
+      <li>Left child has a key smaller than it’s parent node.</li>
+      <li>Right child has a key greater than it’s parent node.</li>
+      <li>There can be no duplicate node.</li>
+      <li>Because of the above it is more likely to be used as a data structure than a binary tree.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="big-o-efficiency-3">Big O efficiency:</h4>
+<ul>
+  <li>Indexing:  Binary Search Tree: O(log n)</li>
+  <li>Search:    Binary Search Tree: O(log n)</li>
+  <li>Insertion: Binary Search Tree: O(log n)</li>
+</ul>
+
+<h2 id="search-basics">Search Basics</h2>
+<h3 id="breadth-first-search"><strong>Breadth First Search</strong></h3>
+<h4 id="definition-4">Definition:</h4>
+<ul>
+  <li>An algorithm that searches a tree (or graph) by searching levels of the tree first, starting at the root.
+    <ul>
+      <li>It finds every node on the same level, most often moving left to right.</li>
+      <li>While doing this it tracks the children nodes of the nodes on the current level.</li>
+      <li>When finished examining a level it moves to the left most node on the next level.</li>
+      <li>The bottom-right most node is evaluated last (the node that is deepest and is farthest right of it’s level).</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-4">What you need to know:</h4>
+<ul>
+  <li>Optimal for searching a tree that is wider than it is deep.</li>
+  <li>Uses a queue to store information about the tree while it traverses a tree.
+    <ul>
+      <li>Because it uses a queue it is more memory intensive than <strong>depth first search</strong>.</li>
+      <li>The queue uses more memory because it needs to stores pointers</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="big-o-efficiency-4">Big O efficiency:</h4>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Search: Breadth First Search: O(</td>
+          <td>E</td>
+          <td>+</td>
+          <td>V</td>
+          <td>)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>E is number of edges</li>
+  <li>V is number of vertices</li>
+</ul>
+
+<h3 id="depth-first-search"><strong>Depth First Search</strong></h3>
+<h4 id="definition-5">Definition:</h4>
+<ul>
+  <li>An algorithm that searches a tree (or graph) by searching depth of the tree first, starting at the root.
+    <ul>
+      <li>It traverses left down a tree until it cannot go further.</li>
+      <li>Once it reaches the end of a branch it traverses back up trying the right child of nodes on that branch, and if possible left from the right children.</li>
+      <li>When finished examining a branch it moves to the node right of the root then tries to go left on all it’s children until it reaches the bottom.</li>
+      <li>The right most node is evaluated last (the node that is right of all it’s ancestors).</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-5">What you need to know:</h4>
+<ul>
+  <li>Optimal for searching a tree that is deeper than it is wide.</li>
+  <li>Uses a stack to push nodes onto.
+    <ul>
+      <li>Because a stack is LIFO it does not need to keep track of the nodes pointers and is therefore less memory intensive than breadth first search.</li>
+      <li>Once it cannot go further left it begins evaluating the stack.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="big-o-efficiency-5">Big O efficiency:</h4>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Search: Depth First Search: O(</td>
+          <td>E</td>
+          <td>+</td>
+          <td>V</td>
+          <td>)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>E is number of edges</li>
+  <li>V is number of vertices</li>
+</ul>
+
+<h4 id="breadth-first-search-vs-depth-first-search">Breadth First Search Vs. Depth First Search</h4>
+<ul>
+  <li>The simple answer to this question is that it depends on the size and shape of the tree.
+    <ul>
+      <li>For wide, shallow trees use Breadth First Search</li>
+      <li>For deep, narrow trees use Depth First Search</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="nuances">Nuances:</h4>
+<ul>
+  <li>Because BFS uses queues to store information about the nodes and its children, it could use more memory than is available on your computer.  (But you probably won’t have to worry about this.)</li>
+  <li>If using a DFS on a tree that is very deep you might go unnecessarily deep in the search. See <a href="http://xkcd.com/761/">xkcd</a> for more information.</li>
+  <li>Breadth First Search tends to be a looping algorithm.</li>
+  <li>Depth First Search tends to be a recursive algorithm.</li>
+</ul>
+
+<h2 id="efficient-sorting-basics">Efficient Sorting Basics</h2>
+<h3 id="merge-sort"><strong>Merge Sort</strong></h3>
+<h4 id="definition-6">Definition:</h4>
+<ul>
+  <li>A comparison based sorting algorithm
+    <ul>
+      <li>Divides entire dataset into groups of at most two.</li>
+      <li>Compares each number one at a time, moving the smallest number to left of the pair.</li>
+      <li>Once all pairs sorted it then compares left most elements of the two leftmost pairs creating a sorted group of four with the smallest numbers on the left and the largest ones on the right.</li>
+      <li>This process is repeated until there is only one set.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-6">What you need to know:</h4>
+<ul>
+  <li>This is one of the most basic sorting algorithms.</li>
+  <li>Know that it divides all the data into as small possible sets then compares them.</li>
+</ul>
+
+<h4 id="big-o-efficiency-6">Big O efficiency:</h4>
+<ul>
+  <li>Best Case Sort: Merge Sort: O(n)</li>
+  <li>Average Case Sort: Merge Sort: O(n log n)</li>
+  <li>Worst Case Sort: Merge Sort: O(n log n)</li>
+</ul>
+
+<h3 id="quicksort"><strong>Quicksort</strong></h3>
+<h4 id="definition-7">Definition:</h4>
+<ul>
+  <li>A comparison based sorting algorithm
+    <ul>
+      <li>Divides entire dataset in half by selecting the average element and putting all smaller elements to the left of the average.</li>
+      <li>It repeats this process on the left side until it is comparing only two elements at which point the left side is sorted.</li>
+      <li>When the left side is finished sorting it performs the same operation on the right side.</li>
+    </ul>
+  </li>
+  <li>Computer architecture favors the quicksort process.</li>
+</ul>
+
+<h4 id="what-you-need-to-know-7">What you need to know:</h4>
+<ul>
+  <li>While it has the same Big O as (or worse in some cases) many other sorting algorithms it is often faster in practice than many other sorting algorithms, such as merge sort.</li>
+  <li>Know that it halves the data set by the average continuously until all the information is sorted.</li>
+</ul>
+
+<h4 id="big-o-efficiency-7">Big O efficiency:</h4>
+<ul>
+  <li>Best Case Sort: Merge Sort: O(n)</li>
+  <li>Average Case Sort: Merge Sort: O(n log n)</li>
+  <li>Worst Case Sort: Merge Sort: O(n^2)</li>
+</ul>
+
+<h3 id="bubble-sort"><strong>Bubble Sort</strong></h3>
+<h4 id="definition-8">Definition:</h4>
+<ul>
+  <li>A comparison based sorting algorithm
+    <ul>
+      <li>It iterates left to right comparing every couplet, moving the smaller element to the left.</li>
+      <li>It repeats this process until it no longer moves and element to the left.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-8">What you need to know:</h4>
+<ul>
+  <li>While it is very simple to implement, it is the least efficient of these three sorting methods.</li>
+  <li>Know that it moves one space to the right comparing two elements at a time and moving the smaller on to left.</li>
+</ul>
+
+<h4 id="big-o-efficiency-8">Big O efficiency:</h4>
+<ul>
+  <li>Best Case Sort: Merge Sort: O(n)</li>
+  <li>Average Case Sort: Merge Sort: O(n^2)</li>
+  <li>Worst Case Sort: Merge Sort: O(n^2)</li>
+</ul>
+
+<h4 id="merge-sort-vs-quicksort">Merge Sort Vs. Quicksort</h4>
+<ul>
+  <li>Quicksort is likely faster in practice.</li>
+  <li>Merge Sort divides the set into the smallest possible groups immediately then reconstructs the incrementally as it sorts the groupings.</li>
+  <li>Quicksort continually divides the set by the average, until the set is recursively sorted.</li>
+</ul>
+
+<h2 id="basic-types-of-algorithms">Basic Types of Algorithms</h2>
+<h3 id="recursive-algorithms"><strong>Recursive Algorithms</strong></h3>
+<h4 id="definition-9">Definition:</h4>
+<ul>
+  <li>An algorithm that calls itself in its definition.
+    <ul>
+      <li><strong>Recursive case</strong> a conditional statement that is used to trigger the recursion.</li>
+      <li><strong>Base case</strong> a conditional statement that is used to break the recursion.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-9">What you need to know:</h4>
+<ul>
+  <li><strong>Stack level too deep</strong> and <strong>stack overflow</strong>.
+    <ul>
+      <li>If you’ve seen either of these from a recursive algorithm, you messed up.</li>
+      <li>It means that your base case was never triggered because it was faulty or the problem was so massive you ran out of RAM before reaching it.</li>
+      <li>Knowing whether or not you will reach a base case is integral to correctly using recursion.</li>
+      <li>Often used in Depth First Search</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="iterative-algorithms"><strong>Iterative Algorithms</strong></h3>
+<h4 id="definition-10">Definition:</h4>
+<ul>
+  <li>An algorithm that is called repeatedly but for a finite number of times, each time being a single iteration.
+    <ul>
+      <li>Often used to move incrementally through a data set.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-10">What you need to know:</h4>
+<ul>
+  <li>Generally you will see iteration as loops, for, while, and until statements.</li>
+  <li>Think of iteration as moving one at a time through a set.</li>
+  <li>Often used to move through an array.</li>
+</ul>
+
+<h4 id="recursion-vs-iteration">Recursion Vs. Iteration</h4>
+<ul>
+  <li>The differences between recursion and iteration can be confusing to distinguish since both can be used to implement the other. But know that,
+    <ul>
+      <li>Recursion is, usually, more expressive and easier to implement.</li>
+      <li>Iteration uses less memory.</li>
+    </ul>
+  </li>
+  <li><strong>Functional languages</strong> tend to use recursion. (i.e. Haskell)</li>
+  <li><strong>Imperative languages</strong> tend to use iteration. (i.e. Ruby)</li>
+  <li>Check out this <a href="http://stackoverflow.com/questions/19794739/what-is-the-difference-between-iteration-and-recursion">Stack Overflow post</a> for more info.</li>
+</ul>
+
+<h4 id="pseudo-code-of-moving-through-an-array-this-is-why-iteration-is-used-for-this">Pseudo Code of Moving Through an Array (this is why iteration is used for this)</h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>Recursion                         | Iteration
+----------------------------------|----------------------------------
+recursive method (array, n)       | iterative method (array)
+  if array[n] is not nil          |   for n from 0 to size of array
+    print array[n]                |     print(array[n])
+    recursive method(array, n+1)  |
+  else                            |
+    exit loop                     |
+</code></pre>
+</div>
+<h3 id="greedy-algorithm"><strong>Greedy Algorithm</strong></h3>
+<h4 id="definition-11">Definition:</h4>
+<ul>
+  <li>An algorithm that, while executing, selects only the information that meets a certain criteria.</li>
+  <li>The general five components, taken from <a href="http://en.wikipedia.org/wiki/Greedy_algorithm#Specifics">Wikipedia</a>:
+    <ul>
+      <li>A candidate set, from which a solution is created.</li>
+      <li>A selection function, which chooses the best candidate to be added to the solution.</li>
+      <li>A feasibility function, that is used to determine if a candidate can be used to contribute to a solution.</li>
+      <li>An objective function, which assigns a value to a solution, or a partial solution.</li>
+      <li>A solution function, which will indicate when we have discovered a complete solution.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="what-you-need-to-know-11">What you need to know:</h4>
+<ul>
+  <li>Used to find the optimal solution for a given problem.</li>
+  <li>Generally used on sets of data where only a small proportion of the information evaluated meets the desired result.</li>
+  <li>Often a greedy algorithm can help reduce the Big O of an algorithm.</li>
+</ul>
+
+<h4 id="pseudo-code-of-a-greedy-algorithm-to-find-largest-difference-of-any-two-numbers-in-an-array">Pseudo Code of a Greedy Algorithm to Find Largest Difference of any Two Numbers in an Array.</h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>greedy algorithm (array)
+  var largest difference = 0
+  var new difference = find next difference (array[n], array[n+1])
+  largest difference = new difference if new difference is &gt; largest difference
+  repeat above two steps until all differences have been found
+  return largest difference
+</code></pre>
+</div>
+
+<p>This algorithm never needed to compare all the differences to one another, saving it an entire iteration.</p>
+
+          </div>
+
+          <div class="article-share">
+            
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status=Technical Interview Cheatsheet - https://edwinlab.github.io/blog/blog/posts/technical-interview-cheatsheet by @edwinlab', 'newwindow', 'width=500, height=225'); return false;" data-turbolinks="false">
+              <svg enable-background="new 0 0 128 128" width="15px" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x37__stroke"><g id="Twitter"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><path clip-rule="evenodd" d="M128,23.294    c-4.703,2.142-9.767,3.59-15.079,4.237c5.424-3.328,9.587-8.606,11.548-14.892c-5.079,3.082-10.691,5.324-16.687,6.526    c-4.778-5.231-11.608-8.498-19.166-8.498c-14.493,0-26.251,12.057-26.251,26.927c0,2.111,0.225,4.16,0.676,6.133    C41.217,42.601,21.871,31.892,8.91,15.582c-2.261,3.991-3.554,8.621-3.554,13.552c0,9.338,4.636,17.581,11.683,22.412    c-4.297-0.131-8.355-1.356-11.901-3.359v0.331c0,13.051,9.053,23.937,21.074,26.403c-2.201,0.632-4.523,0.948-6.92,0.948    c-1.69,0-3.343-0.162-4.944-0.478c3.343,10.694,13.035,18.483,24.53,18.691c-8.986,7.227-20.315,11.533-32.614,11.533    c-2.119,0-4.215-0.123-6.266-0.37c11.623,7.627,25.432,12.088,40.255,12.088c48.309,0,74.717-41.026,74.717-76.612    c0-1.171-0.023-2.342-0.068-3.49C120.036,33.433,124.491,28.695,128,23.294" fill-rule="evenodd" id="Twitter_1_"/></g></g></svg>
+            </a>
+            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://edwinlab.github.io/blog/blog/posts/technical-interview-cheatsheet', 'newwindow', 'width=500, height=500'); return false;" data-turbolinks="false">
+              <svg enable-background="new 0 0 128 128" width="15px" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31__stroke"><g id="Facebook_1_"><rect fill="none" height="128" width="128"/><path clip-rule="evenodd" d="M68.369,128H7.065C3.162,128,0,124.836,0,120.935    V7.065C0,3.162,3.162,0,7.065,0h113.871C124.837,0,128,3.162,128,7.065v113.87c0,3.902-3.163,7.065-7.064,7.065H88.318V78.431    h16.638l2.491-19.318H88.318V46.78c0-5.593,1.553-9.404,9.573-9.404l10.229-0.004V20.094c-1.769-0.235-7.841-0.761-14.906-0.761    c-14.749,0-24.846,9.003-24.846,25.535v14.246H51.688v19.318h16.681V128z" fill-rule="evenodd" id="Facebook"/></g></g></svg>
+            </a>
+            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=https://edwinlab.github.io/blog/blog/posts/technical-interview-cheatsheet', 'newwindow', 'width=550, height=400'); return false;" data-turbolinks="false">
+              <svg enable-background="new 0 0 128 128" version="1.1" viewBox="0 0 128 128" width="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x35__stroke"><g id="Google_Plus"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><path clip-rule="evenodd" d="M40.654,55.935v16.13    c0,0,15.619-0.021,21.979-0.021C59.189,82.5,53.834,88.194,40.654,88.194c-13.338,0-23.748-10.832-23.748-24.194    s10.41-24.194,23.748-24.194c7.052,0,11.607,2.483,15.784,5.944c3.344-3.35,3.065-3.828,11.573-11.877    c-7.222-6.586-16.822-10.6-27.357-10.6C18.201,23.273,0,41.507,0,64c0,22.493,18.201,40.727,40.654,40.727    c33.561,0,41.763-29.275,39.044-48.792H40.654z M113.912,56.742V42.628h-10.063v14.113H89.358v10.081h14.491v14.517h10.063V66.823    H128V56.742H113.912z" fill-rule="evenodd" id="Google_Plus_1_"/></g></g></svg>
+            </a>
+          </div>
+
+          
+        </article>
+        <footer class="footer reveal">
+  <p>
+    Jakarta, Indonesia.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+      }
+    });
+  </script>
+
+
+
+
+<script type="text/javascript" src="/blog/assets/vendor.js"></script>
+<script type="text/javascript" src="/blog/assets/application.js"></script>
+
+</body>
+</html>
