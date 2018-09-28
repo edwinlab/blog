@@ -2,7 +2,7 @@
 layout: post
 title: "2018 perlu ganti hape lagi?"
 description: "Perkembangan smartphone yang menggila apakah kita juga (ikutan) menggila?"
-tags: [#HuaweiNova3i_ID, #choosethebest]
+tags: [HuaweiNova3i_ID, choosethebest]
 ---
 
 ## Yah baru juga beli hape...
