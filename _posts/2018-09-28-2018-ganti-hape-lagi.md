@@ -4,6 +4,10 @@ title: "2018 perlu ganti hape lagi?"
 description: "Perkembangan smartphone yang menggila apakah kita juga (ikutan) menggila?"
 tags: [HuaweiNova3i_ID, choosethebest]
 ---
+[i3man]: https://raw.githubusercontent.com/edwinlab/blog/master/_assets/images/i3man.JPG "Nova 3i Man Model"
+[i3woman]: https://raw.githubusercontent.com/edwinlab/blog/master/_assets/images/i3woman.JPG "Nova 3i Women Model"
+[qmoji]: https://raw.githubusercontent.com/edwinlab/blog/master/_assets/images/qmoji.png "Nova 3i QMOJI"
+[variant]: https://github.com/edwinlab/blog/blob/master/_assets/images/variant.JPG?raw=true "Nova 3i Variant"
 
 ## Yah baru juga beli hape...
 Suara sayup terdengar dari sebelah, roy terlihat menghela napas kacamatanya terlihat menyala terpantul layar laptop. Tepat hari ini Apple mengumumkan barisan series iPhone terbarunya, padahal roy (bukan nama sebenarnya tentunya) baru saja unboxing iPhone X. Dengan harga fantatis tentu roy perlu menabung berbulan-bulan untuk membawa pulang smartphone berponi ini. Mungkin lain cerita jika roy bukan penganut __anti riba-riba club__ tentu roy bisa membeli dengan kartu kredit atau cicilan tanpa kartu kredit yang sekarang bisa di dapat di online shop manapun.
@@ -29,11 +33,17 @@ Jika smartphone yang kamu incar kelas mid-end biasanya kamu akan lebih bertolera
 ## Beli apa dong?
 Tentu disini tidak hanya memberi tips dan trik dalam memilih smartphone tapi juga akan memberikan bocaran smartphone yang cocok dengan 4 syarat diatas. Perkenalkan [Huawei nova 3i](https://consumer.huawei.com/id/phones/nova3i) smartphone terbaru dari Huawei yang cocok dengan anak muda kekinian. Sebuah smartphone mid-end yang akan memberi pengalaman setara flagship. Lalu yakin cocok?
 
+![Nova 3i Man Model][i3man]
+
 ### Desain Kekinian
 Huawei nova 3i didesain dengan garis design kekinian tapi tetap nampak elegan, lapisan kaca menyelimuti bodi bagian belakang dengan gradasi warna. Tenang ada 2 pilihan warna black dan iris purple di topang dengan bodi tipis berbalut metal dengan ketebalan 7.6 mm. Smartphone ini juga mengusung rasio kekinian dengan layar 6.3 inchi dengan notch di bagian atas (tenang bisa di sembunyiin kalo ga suka smartphone berponi).
 
+![Nova 3i Variant][variant]
+
 ### Kamera Juara
 Ga tanggung-tanggu nova 3i di bekali 4 kamera dengan konfigurasi ganda 24 MP dan 2 MP di bagian depan dan 16 MP dan 2 MP di bagian belakang. Lensa utama bertugas untuk merekam detail sementara lensa kedua menghasilkan efek kedalaman (bokeh). Di tambah kamera ganda belakang nova 3i dibekali AI technologies yang mengoptimalkan gambar sesuai keadaan ketika gambar di ambil, selain itu juga memiliki selfi algoritma AI untuk fitur beautification.
+
+![Nova 3i Women Model][i3women]
 
 ### Storage 128 GB
 Dengan membawa 128 GB ROM membuat nova 3i menjadi smartphone mid-end dengan penyimpanan terbesar, tentu dengan opsi penambahan penyimpanan extra microSD hingga 250 GB. Jadi sekarang sudah tidak perlu khawatir kehabisan storage ketika selfi atau ambil video.
@@ -45,6 +55,8 @@ Dengan Kirin 710 berteknologi 12 nm sebenarnya udah lebih dari cukup untuk melah
 Huawei seperti tidak habis pikir udah desain kekinian dengan garis design gradien, kamera yang ga tangung-tanggung 4 buah, penyimpanan hingga 128 GB, dan penambahan teknologi GPU turbo yang memanjakan. Nova 3i juga mempunyai fitur yang cuma bisa kita dapat di smartphone flagship.
 
 **QMOJI** dengan tagline _QMOJI-KAN DIRIMU_ berusaha menghadirkan _Animoji_nya iPhone X di huawei 3i. Serta _16X Super Slow Motion_ ga kalah keren dengan video slow motion ala Samsung Galaxy.
+
+![QMOJI][qmoji]
 
 Terus kamu masih harus ganti hape tiap tahun?
 
