@@ -62,7 +62,7 @@ Terus kamu masih harus ganti hape tiap tahun?
 
 
 ***
-- Artikel untuk memeriahkan acara @oomYahya di acara [Huawei Nova 3i](https://yahyakurniawan.net/gadget/smartphone-impian-kamu-pada-tahun-2018/#more-3347)
+- [Oom Boy](https://yahyakurniawan.net) Punya Gawe Berhadiah Huawei
 - Konten dan gambar:
 - https://yahyakurniawan.net/gadget/materi-untuk-lomba-blog-berhadiah-huawei-nova-3i/
 - https://consumer.huawei.com/id/phones/nova3i
