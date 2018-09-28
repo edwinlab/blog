@@ -43,7 +43,7 @@ Huawei nova 3i didesain dengan garis design kekinian tapi tetap nampak elegan, l
 ### Kamera Juara
 Ga tanggung-tanggu nova 3i di bekali 4 kamera dengan konfigurasi ganda 24 MP dan 2 MP di bagian depan dan 16 MP dan 2 MP di bagian belakang. Lensa utama bertugas untuk merekam detail sementara lensa kedua menghasilkan efek kedalaman (bokeh). Di tambah kamera ganda belakang nova 3i dibekali AI technologies yang mengoptimalkan gambar sesuai keadaan ketika gambar di ambil, selain itu juga memiliki selfi algoritma AI untuk fitur beautification.
 
-![Nova 3i Women Model][i3women]
+![Nova 3i Women Model][i3woman]
 
 ### Storage 128 GB
 Dengan membawa 128 GB ROM membuat nova 3i menjadi smartphone mid-end dengan penyimpanan terbesar, tentu dengan opsi penambahan penyimpanan extra microSD hingga 250 GB. Jadi sekarang sudah tidak perlu khawatir kehabisan storage ketika selfi atau ambil video.
